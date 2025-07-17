@@ -34,13 +34,13 @@ header, h1, h2, #bingo-nickname {
 }
 
 h1 {
-  color: #FD9803;
+  color: #6f0301;
   margin-bottom: 1rem;
 }
 
 button#draw-button {
   padding: 0.8rem 1.5rem;
-  background-color: #FD9803;
+  background-color: #6f0301;
   color: white;
   border: none;
   font-size: 1.1rem;
@@ -50,7 +50,7 @@ button#draw-button {
   margin-bottom: 1rem;
 }
 button#draw-button:hover {
-  background-color: #e68602;
+  background-color: #5a0200;
 }
 
 .card {
@@ -58,7 +58,7 @@ button#draw-button:hover {
   padding: 1rem;
   border-top: 4px solid #FD9803;
   border-radius: 8px;
-  background-color: #fdfdfd;
+  background-color: #6f0301;
 }
 
 .card-content {
@@ -140,7 +140,7 @@ button#draw-button:hover {
   margin-top: 3rem;
   font-size: 1.2rem;
   font-weight: bold;
-  color: #112656;
+  color: #c29b67;
 }
 
 .sound-toggle {
