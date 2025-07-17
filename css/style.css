@@ -1,0 +1,150 @@
+/* Corporate colours
+   #FD9803 - Vivid orange
+   #112656 - Very dark blue
+*/
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+  color: #112656;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  text-align: center;
+  padding: 2rem;
+  max-width: 900px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+header .logo {
+  width: 80px;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  color: #FD9803;
+  margin-bottom: 1rem;
+}
+
+button#draw-button {
+  padding: 0.8rem 1.5rem;
+  background-color: #FD9803;
+  color: white;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+button#draw-button:hover {
+  background-color: #e68602;
+}
+
+.card {
+  margin: 2rem 0;
+  padding: 1rem;
+  border-top: 4px solid #FD9803;
+  border-radius: 8px;
+  background-color: #fdfdfd;
+}
+
+.card-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+/* Grid of 90 numbers: 10 columns */
+#bingo-board {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 0.5rem;
+  justify-items: center;
+  padding: 1rem 0;
+}
+
+/* Grey placeholder before a ball is drawn */
+.placeholder {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #ddd;
+  color: #999;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  transition: all 0.3s ease;
+}
+
+/* Bingo ball animations */
+@keyframes popBounce {
+  0% {
+    transform: scale(0.4);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes throb {
+  0% {
+    transform: scale(1);
+    filter: brightness(1);
+  }
+  50% {
+    transform: scale(1.2);
+    filter: brightness(1.1);
+  }
+  100% {
+    transform: scale(1);
+    filter: brightness(1);
+  }
+}
+
+.bingo-ball {
+  animation: popBounce 0.4s ease-out;
+  will-change: transform, opacity;
+}
+
+.throb {
+  animation: throb 1s ease-in-out infinite;
+  will-change: transform, filter;
+}
+
+/* Nickname display */
+#bingo-nickname {
+  margin-top: 3rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #112656;
+}
+
+.sound-toggle {
+  display: inline-block;
+  font-size: 1rem;
+  margin-left: 1rem;
+  cursor: pointer;
+  user-select: none;
+}
+.sound-toggle input {
+  margin-right: 0.5rem;
+}
