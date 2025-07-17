@@ -26,6 +26,11 @@ body {
 header .logo {
   width: 100%;
   margin-bottom: 1rem;
+  justify-content: center;
+}
+
+header, h1, h2, #bingo-nickname {
+  text-align: center;
 }
 
 h1 {
