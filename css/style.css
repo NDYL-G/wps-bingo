@@ -1,5 +1,5 @@
 /* Corporate colours
-   #FD9803 - Vivid orange
+   #6f0301 - Vivid orange
    #112656 - Very dark blue
 */
 
@@ -56,9 +56,9 @@ button#draw-button:hover {
 .card {
   margin: 2rem 0;
   padding: 1rem;
-  border-top: 4px solid #FD9803;
+  border-top: 4px solid #6f0301;
   border-radius: 8px;
-  background-color: #6f0301;
+  background-color: #fdfdfd;
 }
 
 .card-content {
